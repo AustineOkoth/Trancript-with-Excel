@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+</head>
+<style>
+    form{
+        margin-top:100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: max-content;
+    }
+    input{
+        border: 1px solid grey;
+        width: 200px;
+        height: 40px;
+        /* margin-left: 40%; */
+        margin-right: auto;
+    
+    }
+    button{
+        margin-left: 30%;
+        text-align: center;
+        height: 30px;
+        color: black;
+    }
+</style>
+
+<body>
+    <form id="login-form" method="post" action="/result" autocomplete="on"><br>
+        <input type="text" id="registrationNumber" name="regNumber" placeholder="Enter Registration Number"
+            required><br><br>
+        <button id="submit-btn">SUBMIT</button>
+    </form>
+</body>
+
+</html>

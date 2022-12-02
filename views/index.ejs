@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script lang="javascript" src="dist/xlsx.full.min.js"></script> -->
+
+</head>
+<style>
+    #body-container{
+        display: flex;
+        flex-direction: row;
+    }
+    table {
+        /* margin: auto; */
+        border-spacing: 10px;
+        border: 0px;
+    }
+
+    th {
+        border: 0px solid black;
+    }
+
+    td {
+        border: 0px solid green;
+    }
+    li{
+        padding-top: 15px;
+        padding-right: 5px;
+    }
+</style>
+
+<body>
+
+    <div id="body-container">
+        <table style="background-color: whitesmoke; padding:10px">
+            <th colspan="2" id="schoolName" style="text-align:center;">Jomo Kenyatta University of Agriculture and
+                Technology</th>
+            <tr>
+                <td>Registration Number: <b id="regNumber">
+                        <%=regNumber%>
+                    </b></td>
+                <td id="name" style="text-align: right;">Name: <small style="font-size:medium; font-weight: bold;"
+                        id="studentName">
+                        <%=nameOfStudent%>
+                    </small>
+                </td>
+            </tr>
+    
+            <tr>
+                <td>Course Name: <b id="course">Mathematics and Computer Science</b></td>
+                <td style="text-align: right;">Year of Study: 3rd</td>
+            </tr>
+    
+            <tr>
+                <td>Semester: First</td>
+                <td style="text-align: right">Date: 12/10/2019</td>
+            </tr>
+    
+            <tr>
+                <th style="text-align:left;">SUBJECTS</th>
+                <th>Marks</th>
+                <th>Grade</th>
+            </tr>
+            <tr>
+                <td>Numerical Analysis</td>
+                <td style="text-align:center"><small style="font-size:medium" id="numMarks">
+                        <%=marksNumerical%>
+                    </small></b></td>
+                <td><%=GRADENUMERICAL%></td>
+            </tr>
+            <tr>
+                <td>Real Analysis</td>
+                <td style="text-align:center"><small style="font-size:medium" id="realMarks">
+                        <%=marksReal%>
+                    </small></td>
+                <td><%=GRADEREAL%></td>
+            </tr>
+            <tr>
+                <td>Computer Graphics</td>
+                <td style="text-align:center"><small style="font-size:medium" id="compsMarks">
+                        <%=marksComps%>
+                    </small></td>
+                <td><%=GRADECOMPS%></td>
+            </tr>
+            <tr>
+                <td>Ordinary Dufferential Equations</td>
+                <td style="text-align:center"><small style="font-size:medium" id="odeMarks">
+                        <%=marksODE%>
+                    </small></td>
+                <td><%=GRADEODE%></td>
+            </tr>
+            <tr>
+                <td>Scientific Computing</td>
+                <td style="text-align:center"><small style="font-size:medium" id="scientificMarks">
+                        <%=marksScientific%>
+                    </small></td>
+                <td>
+                    <%=GRADECOMPUTING%>
+                </td>
+            </tr>
+            <tr>
+                <td>Accounts and Finance</td>
+                <td style="text-align:center"><small style="font-size:medium" id="accMarks">
+                        <%=marksAccounts%>
+                    </small></td>
+                <td><%=GRADEACCOUNTS%></td>
+            </tr>
+            <tr>
+                <td>Operating System</td>
+                <td style="text-align:center"><small style="font-size:medium" id="osMarks">
+                        <%=marksOS%>
+                    </small></td>
+                <td><%=GRADEOS%></td>
+            </tr>
+    
+            <tr>
+                <td style="font-weight: bold;">Total Marks</td>
+                <td style="text-align: center; font-weight: bolder;">
+                    <%=totalMarks%>
+                </td>
+            </tr>
+            <tr>
+                <td style="font-weight: bold;">Average Score</td>
+                <td style="text-align: center; font-weight: bolder;">
+                    <%=averageScore%>
+                </td>
+    
+            </tr>
+    
+        </table>
+        <div style="background-color:whitesmoke; margin: 10px; width: max-content;">
+            <ul>
+                <li style="list-style:none ;"><b>School Subject Average</b></li>
+                <li>Numerical Analysis <b> <%=avgNum%></b></li>
+                <li>Real Analysis <b> <%=avgReal%></b></li>
+                <li>Computer Graphics <b> <%=avgComp%></b></li>
+                <li>ODE <b> <%=avgODE%></b></li>
+                <li>Scientific Computing <b> <%=avgScientific%></b></li>
+                <li>Accounts and Finance<b> <%=avgAccounts%></b></li>
+                <li>Operating System<b> <%=avgOS%></b></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+</html>
